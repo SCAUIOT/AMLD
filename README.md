@@ -29,7 +29,6 @@ IMFs (Intrinsic Mode Functions) are the signal components produced by decomposit
 - Data and clean-reference paths are currently hard-coded and should be updated before running.
 - Part 5 uses clean references for evaluation and calibration. Part 6 uses blind SNR for refinement and does not recompute reference-based correlation after each update.
 
-*The final filename is truncated in the screenshot. Module descriptions are based on filenames.*
 
 ## Environment
 
@@ -80,8 +79,6 @@ All noise categories follow the same sample folder structure. Update the dataset
 ```matlab
 main
 ```
-
-Processing results and output locations are defined in the scripts.
 
 ## Denoising Results
 
