@@ -21,7 +21,9 @@ IMFs (Intrinsic Mode Functions) are the signal components produced by decomposit
 | `part5_similarity_evaluation.m` | Compares the original reconstruction with linear calibration and several offset corrections, selecting the variant with the highest estimated SNR. |
 | `part6_adaptive_redecomposition.m` | Refines mixed IMFs through repeated VMD decomposition, submode selection, and reconstruction for up to five iterations. |
 | `part7_denoised_window_features.m` | Detects vehicle intervals in two denoised sensor signals using window energy and variance. Compares sequentially paired vehicle segments using Dynamic Time Warping (DTW), reports an adaptive-threshold matching percentage as ReID-ACC, and estimates speed from the first detected arrival-time difference using an 9 m sensor spacing. |
-
+| 'dataset' | The dataset is located in this folder. |
+| 'figure' | The images showing examples are in this folder. |
+ 
 ### Current Entry-Point Behavior
 
 - The active batch workflow runs Parts 1–6. The two-sensor workflow that calls Part 7 is currently commented out.
@@ -68,6 +70,7 @@ Each sample folder contains:
 - `sensor2.txt`: signal data from sensor 2.
 
 All noise categories follow the same sample folder structure. Update the dataset path in the MATLAB scripts before running.
+
 
 ## Usage
 
