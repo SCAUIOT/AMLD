@@ -1,7 +1,12 @@
 # Vehicle Speed Estimation Based on Adaptive Multi-Layer Decomposition Denoising of Magnetic Signals
 
-A MATLAB project for signal analysis and denoising using sliding-window entropy, Variational Mode Decomposition (VMD), correlation analysis, signal reconstruction, similarity evaluation, and adaptive redecomposition.
+This repository provides the implementation and dataset for our AMLD-based vehicle speed estimation method.
 
+AMLD is designed for vehicle speed estimation using roadside magnetic sensor networks under electromagnetic interference. It follows a three-stage pipeline:
+
+**Signal Denoising → Vehicle Re-identification → Speed Estimation**
+
+The upstream and downstream magnetic signals are first processed using an adaptive multi-layer decomposition method to suppress interference and extract vehicle-related signal components. Vehicle-active intervals are subsequently matched across sensor nodes using an **energy-weighted IMF-DTW** strategy for vehicle re-identification. Based on the matched vehicle passages, the vehicle speed is calculated using the sensor spacing and the corresponding inter-node time delay.
 ## File Structure
 
 IMFs (Intrinsic Mode Functions) are the signal components produced by decomposition.
@@ -77,3 +82,5 @@ main
 ```
 
 Processing results and output locations are defined in the scripts.
+
+
