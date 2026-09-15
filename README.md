@@ -1,4 +1,4 @@
-# Signal Denoising Based on Sliding Entropy and VMD
+# Vehicle Speed Estimation Based on Adaptive Multi-Layer Decomposition Denoising of Magnetic Signals
 
 A MATLAB project for signal analysis and denoising using sliding-window entropy, Variational Mode Decomposition (VMD), correlation analysis, signal reconstruction, similarity evaluation, and adaptive redecomposition.
 
