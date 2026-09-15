@@ -21,7 +21,9 @@ IMFs (Intrinsic Mode Functions) are the signal components produced by decomposit
 | `part5_similarity_evaluation.m` | Compares the original reconstruction with linear calibration and several offset corrections, selecting the variant with the highest estimated SNR. |
 | `part6_adaptive_redecomposition.m` | Refines mixed IMFs through repeated VMD decomposition, submode selection, and reconstruction for up to five iterations. |
 | `part7_denoised_window_features.m` | Detects vehicle intervals in two denoised sensor signals using window energy and variance. Compares sequentially paired vehicle segments using Dynamic Time Warping (DTW), reports an adaptive-threshold matching percentage as ReID-ACC, and estimates speed from the first detected arrival-time difference using an 9 m sensor spacing. |
-
+| 'dataset' | The dataset is located in this folder. |
+| 'figure' | The images showing examples are in this folder. |
+ 
 ### Current Entry-Point Behavior
 
 - The active batch workflow runs Parts 1–6. The two-sensor workflow that calls Part 7 is currently commented out.
@@ -29,7 +31,6 @@ IMFs (Intrinsic Mode Functions) are the signal components produced by decomposit
 - Data and clean-reference paths are currently hard-coded and should be updated before running.
 - Part 5 uses clean references for evaluation and calibration. Part 6 uses blind SNR for refinement and does not recompute reference-based correlation after each update.
 
-*The final filename is truncated in the screenshot. Module descriptions are based on filenames.*
 
 ## Environment
 
@@ -70,6 +71,7 @@ Each sample folder contains:
 
 All noise categories follow the same sample folder structure. Update the dataset path in the MATLAB scripts before running.
 
+
 ## Usage
 
 1. Open the project directory in MATLAB.
@@ -81,6 +83,23 @@ All noise categories follow the same sample folder structure. Update the dataset
 main
 ```
 
-Processing results and output locations are defined in the scripts.
+## Denoising Results
 
+The proposed AMLD method effectively suppresses interference while preserving the main vehicle-related magnetic response. The following example shows a representative magnetic signal before and after denoising.
+
+### Before Denoising
+
+<p align="center">
+  <img src="figure/before1.png" width="800">
+</p>
+
+The original magnetic signal contains noticeable interference components, which may obscure the vehicle-induced magnetic variation and affect subsequent vehicle re-identification and speed estimation.
+
+### After Denoising
+
+<p align="center">
+  <img src="figure/after1.png" width="800">
+</p>
+
+After applying the proposed multi-layer decomposition-based denoising method, the interference is significantly reduced while the main waveform characteristics associated with the passing vehicle are preserved. The cleaner magnetic signature provides a more reliable basis for subsequent cross-node vehicle re-identification and vehicle speed estimation.
 
