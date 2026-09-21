@@ -83,20 +83,25 @@ sampleX/
 
 Both `sensor1.txt` and `sensor2.txt` contain two columns:
 
-| Timestamp     | Magnetic Field |
-| ------------- | -------------- |
-| 1610678477762 | -1.200160      |
-| 1610678477856 | -0.335838      |
-| 1610678477950 | 2.351580       |
-| 1610678478041 | -1.013876      |
-| 1610678478134 | -0.878567      |
+| Timestamp     | X-axis | Y-axis | Z-axis |
+| ------------- | ------ | ------ | ------ |
+| 1610678462899 | 800    | 359    | 435    |
+| 1610678462993 | 752    | 325    | 510    |
+| 1610678463087 | 750    | 323    | 510    |
+| 1610678463181 | 771    | 343    | 464    |
+| 1610678463275 | 775    | 349    | 457    |
+| 1610678463366 | 795    | 357    | 447    |
+| 1610678463460 | 782    | 344    | 470    |
+| 1610678463554 | 738    | 322    | 515    |
 
-The two columns are defined as follows:
+The four columns are defined as follows:
 
-| Column         | Description                               |
-| -------------- | ----------------------------------------- |
-| Timestamp      | Sampling timestamp of the magnetic signal |
-| Magnetic Field | Measured magnetic field intensity         |
+| Column                | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| Timestamp             | Sampling timestamp of the magnetic signal        |
+| X-axis Magnetic Field | Magnetic field measurement along the X-axis      |
+| Y-axis Magnetic Field | Magnetic field measurement along the Y-axis      |
+| Z-axis Magnetic Field | Magnetic field measurement along the Z-axis      |
 
 `sensor1.txt` records the magnetic signal collected by the upstream sensor node, whereas `sensor2.txt` records the corresponding magnetic signal collected by the downstream sensor node.
 
