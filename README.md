@@ -85,33 +85,49 @@ main
 
 ## Denoising Results
 
-The proposed AMLD method effectively suppresses interference while preserving the main vehicle-related magnetic response. The following example shows a representative magnetic signal before and after denoising.
+The proposed AMLD method effectively suppresses interference while preserving the main vehicle-related magnetic response. Three representative examples of magnetic signals before and after denoising are presented below.
 
-### Before Denoising
+### Example 1
+
+**Before denoising**
 
 <p align="center">
   <img src="figure/before2.png" width="800">
 </p>
-<p align="center">
-  <img src="figure/before3.png" width="800">
-</p>
-<p align="center">
-  <img src="figure/before4.png" width="800">
-</p>
 
-The original magnetic signal contains noticeable interference components, which may obscure the vehicle-induced magnetic variation and affect subsequent vehicle re-identification and speed estimation.
-
-### After Denoising
+**After denoising**
 
 <p align="center">
   <img src="figure/after2.png" width="800">
 </p>
+
+### Example 2
+
+**Before denoising**
+
+<p align="center">
+  <img src="figure/before3.png" width="800">
+</p>
+
+**After denoising**
+
 <p align="center">
   <img src="figure/after3.png" width="800">
 </p>
+
+### Example 3
+
+**Before denoising**
+
+<p align="center">
+  <img src="figure/before4.png" width="800">
+</p>
+
+**After denoising**
+
 <p align="center">
   <img src="figure/after4.png" width="800">
 </p>
 
-After applying the proposed multi-layer decomposition-based denoising method, the interference is significantly reduced while the main waveform characteristics associated with the passing vehicle are preserved. The cleaner magnetic signature provides a more reliable basis for subsequent cross-node vehicle re-identification and vehicle speed estimation.
+As shown in the three examples, the original magnetic signals contain noticeable interference components that may obscure vehicle-induced magnetic variations. After applying the proposed multi-layer decomposition-based denoising method, the interference components are effectively suppressed while the main waveform characteristics associated with passing vehicles are preserved. The resulting cleaner magnetic signatures provide a more reliable basis for subsequent cross-node vehicle re-identification and speed estimation.
 
