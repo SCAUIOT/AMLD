@@ -92,13 +92,13 @@ The proposed AMLD method effectively suppresses interference while preserving th
 **Before denoising**
 
 <p align="center">
-  <img src="figure/before2.png" width="800">
+  <img src="figure/before2.png" width="600">
 </p>
 
 **After denoising**
 
 <p align="center">
-  <img src="figure/after2.png" width="800">
+  <img src="figure/after2.png" width="600">
 </p>
 
 ### Example 2
@@ -106,13 +106,13 @@ The proposed AMLD method effectively suppresses interference while preserving th
 **Before denoising**
 
 <p align="center">
-  <img src="figure/before3.png" width="800">
+  <img src="figure/before3.png" width="600">
 </p>
 
 **After denoising**
 
 <p align="center">
-  <img src="figure/after3.png" width="800">
+  <img src="figure/after3.png" width="600">
 </p>
 
 ### Example 3
@@ -120,13 +120,13 @@ The proposed AMLD method effectively suppresses interference while preserving th
 **Before denoising**
 
 <p align="center">
-  <img src="figure/before4.png" width="800">
+  <img src="figure/before4.png" width="600">
 </p>
 
 **After denoising**
 
 <p align="center">
-  <img src="figure/after4.png" width="800">
+  <img src="figure/after4.png" width="600">
 </p>
 
 As shown in the three examples, the original magnetic signals contain noticeable interference components that may obscure vehicle-induced magnetic variations. After applying the proposed multi-layer decomposition-based denoising method, the interference components are effectively suppressed while the main waveform characteristics associated with passing vehicles are preserved. The resulting cleaner magnetic signatures provide a more reliable basis for subsequent cross-node vehicle re-identification and speed estimation.
