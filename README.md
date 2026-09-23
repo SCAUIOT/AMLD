@@ -145,15 +145,11 @@ EF-IMF-DTW compares the IMF-based features of vehicle magnetic signals collected
 
 ### 3. Vehicle Speed Estimation
 
-Once the same vehicle is successfully matched between the upstream and downstream sensor nodes, its speed is estimated according to the spatial distance between the two sensors and the corresponding time delay.
+After vehicle re-identification, the matched upstream and downstream magnetic responses are used for speed estimation. For two sensor nodes separated by a known distance \(D\), the vehicle speed is estimated according to the travel time between the two matched responses:
 
-For two sensor nodes separated by a known distance \(D\), the estimated vehicle speed is calculated as
+**Estimated speed:  v̂ = D / Δt**
 
-\[
-\hat{v} = \frac{D}{\Delta t},
-\]
+where \(D\) is the distance between the upstream and downstream sensor nodes, and \(\Delta t\) is the corresponding travel-time difference of the matched vehicle.
 
-where \(\Delta t\) denotes the time interval between the matched vehicle responses at the upstream and downstream sensor nodes.
-
-Therefore, the complete AMLD framework progressively performs interference suppression, cross-node vehicle re-identification, and speed estimation. Reliable denoising improves the discriminability of vehicle magnetic signatures, while EF-IMF-DTW establishes the correspondence between upstream and downstream observations, providing the basis for accurate vehicle speed estimation.
+Therefore, accurate cross-node vehicle re-identification enables the proposed AMLD framework to determine the vehicle travel time between the two sensor nodes and subsequently estimate its speed.
 
